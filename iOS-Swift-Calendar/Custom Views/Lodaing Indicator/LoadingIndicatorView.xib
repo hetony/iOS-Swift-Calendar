@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingIndicatorView" customModule="iOS_Swift_Calendar" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="ZGz-bn-Sho" id="SQl-rZ-ulj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQb-EH-bR6">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ZGz-bn-Sho">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="0.45882999899999999" green="0.4588117599" blue="0.45882415770000001" alpha="0.87920055649999995" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lQb-EH-bR6" secondAttribute="trailing" id="LCQ-bA-JvZ"/>
+                <constraint firstItem="ZGz-bn-Sho" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="MnD-vw-0B3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lQb-EH-bR6" secondAttribute="bottom" id="alA-S3-ION"/>
+                <constraint firstItem="ZGz-bn-Sho" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cya-9H-GbC"/>
+                <constraint firstItem="lQb-EH-bR6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="iLD-Wg-hEX"/>
+                <constraint firstItem="lQb-EH-bR6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="pm1-68-zeT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

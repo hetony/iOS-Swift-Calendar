@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SideMenuView" customModule="iOS_Swift_Calendar" customModuleProvider="target">
+            <connections>
+                <outlet property="scrollView" destination="9W0-0v-G0H" id="JOT-br-aqR"/>
+                <outlet property="tableView" destination="d5e-ex-UH1" id="yh0-Wz-Io4"/>
+                <outlet property="transparentView" destination="fmP-iQ-c4m" id="eVh-6Z-mUw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmP-iQ-c4m">
+                    <rect key="frame" x="0.0" y="0.0" width="290" height="600"/>
+                    <color key="backgroundColor" red="0.074509803921568626" green="0.098039215686274508" blue="0.20392156862745098" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="290" placeholderIntrinsicHeight="infinite" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9W0-0v-G0H">
+                    <rect key="frame" x="0.0" y="0.0" width="188.5" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7kX-b5-JvA">
+                            <rect key="frame" x="0.0" y="0.0" width="188.5" height="600"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_header_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ZKM-Ic-iEi">
+                                    <rect key="frame" x="9.5" y="60" width="169.5" height="67"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="ZKM-Ic-iEi" secondAttribute="height" multiplier="764:301" id="biC-mx-pXQ"/>
+                                    </constraints>
+                                </imageView>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d5e-ex-UH1">
+                                    <rect key="frame" x="0.0" y="167" width="188.5" height="423"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="ZKM-Ic-iEi" firstAttribute="top" secondItem="7kX-b5-JvA" secondAttribute="top" constant="60" id="3lb-fu-LUW"/>
+                                <constraint firstAttribute="bottom" secondItem="d5e-ex-UH1" secondAttribute="bottom" constant="10" id="5h8-vb-QBn"/>
+                                <constraint firstItem="d5e-ex-UH1" firstAttribute="top" secondItem="ZKM-Ic-iEi" secondAttribute="bottom" constant="40" id="ATa-SW-trQ"/>
+                                <constraint firstItem="ZKM-Ic-iEi" firstAttribute="width" secondItem="7kX-b5-JvA" secondAttribute="width" multiplier="0.9" id="CkU-u5-gVG"/>
+                                <constraint firstItem="d5e-ex-UH1" firstAttribute="leading" secondItem="7kX-b5-JvA" secondAttribute="leading" id="JUc-FH-t2f"/>
+                                <constraint firstAttribute="trailing" secondItem="d5e-ex-UH1" secondAttribute="trailing" id="LuV-YL-Esc"/>
+                                <constraint firstItem="ZKM-Ic-iEi" firstAttribute="centerX" secondItem="7kX-b5-JvA" secondAttribute="centerX" id="NUS-Uv-0Qk"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="7kX-b5-JvA" firstAttribute="top" secondItem="9W0-0v-G0H" secondAttribute="top" id="5ok-HE-Mwo"/>
+                        <constraint firstAttribute="trailing" secondItem="7kX-b5-JvA" secondAttribute="trailing" id="OcP-yC-3bO"/>
+                        <constraint firstItem="7kX-b5-JvA" firstAttribute="leading" secondItem="9W0-0v-G0H" secondAttribute="leading" id="PEs-1A-5qE"/>
+                        <constraint firstAttribute="bottom" secondItem="7kX-b5-JvA" secondAttribute="bottom" id="e5g-gw-klB"/>
+                        <constraint firstItem="7kX-b5-JvA" firstAttribute="centerX" secondItem="9W0-0v-G0H" secondAttribute="centerX" id="kce-QJ-Skq"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="zHs-NP-5vp"/>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="7kX-b5-JvA" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="0wr-DP-ilZ"/>
+                <constraint firstItem="9W0-0v-G0H" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1A3-dQ-Y8k"/>
+                <constraint firstItem="fmP-iQ-c4m" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9PO-Ii-fmf"/>
+                <constraint firstAttribute="bottom" secondItem="9W0-0v-G0H" secondAttribute="bottom" id="O9w-uo-1XW"/>
+                <constraint firstAttribute="trailing" secondItem="fmP-iQ-c4m" secondAttribute="trailing" id="Xlm-f1-c1b"/>
+                <constraint firstItem="fmP-iQ-c4m" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ZO4-RJ-0hs"/>
+                <constraint firstItem="9W0-0v-G0H" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bgb-cs-EOB"/>
+                <constraint firstAttribute="bottom" secondItem="fmP-iQ-c4m" secondAttribute="bottom" id="obH-EE-eAP"/>
+                <constraint firstItem="9W0-0v-G0H" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.65" id="yZr-xG-bbb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="102.89855072463769" y="35.491071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menu_header_icon" width="764" height="301"/>
+    </resources>
+</document>

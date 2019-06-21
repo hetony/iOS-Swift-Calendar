@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sha-ug-f5g">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Holiday Detail View Controller-->
+        <scene sceneID="V5h-Gl-vbt">
+            <objects>
+                <viewController id="Sha-ug-f5g" customClass="HolidayDetailViewController" customModule="iOS_Swift_Calendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="av6-KT-9BU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="infinite" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Vx-4x-tJF">
+                                <rect key="frame" x="20" y="64" width="374" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="o9Y-fT-TYH"/>
+                                </constraints>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="holiday_detail_item_notification_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Kai-Uy-wpq">
+                                <rect key="frame" x="40" y="184" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="0ta-e8-WHd"/>
+                                    <constraint firstAttribute="width" secondItem="Kai-Uy-wpq" secondAttribute="height" multiplier="1:1" id="771-5m-6bQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxN-J5-bDD">
+                                <rect key="frame" x="80" y="184" width="304" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSo-MX-ewz">
+                                <rect key="frame" x="40" y="184" width="304" height="20"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on it to edit notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqS-ht-NHe">
+                                <rect key="frame" x="80" y="209.5" width="133" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kls-Yd-hz3">
+                                <rect key="frame" x="80" y="184" width="304" height="37.5"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tSo-MX-ewz" firstAttribute="leading" secondItem="Kai-Uy-wpq" secondAttribute="leading" id="5MX-ed-szH"/>
+                            <constraint firstItem="MqS-ht-NHe" firstAttribute="leading" secondItem="OxN-J5-bDD" secondAttribute="leading" id="6Fq-BC-e3w"/>
+                            <constraint firstItem="HTQ-HS-zMq" firstAttribute="trailing" secondItem="OxN-J5-bDD" secondAttribute="trailing" constant="30" id="7by-If-uwz"/>
+                            <constraint firstItem="Kai-Uy-wpq" firstAttribute="top" secondItem="1Vx-4x-tJF" secondAttribute="bottom" constant="20" id="9Gf-QF-xpY"/>
+                            <constraint firstItem="MqS-ht-NHe" firstAttribute="top" secondItem="OxN-J5-bDD" secondAttribute="bottom" constant="5" id="FXX-Us-n1h"/>
+                            <constraint firstItem="kls-Yd-hz3" firstAttribute="top" secondItem="OxN-J5-bDD" secondAttribute="top" id="Ffh-W5-4EC"/>
+                            <constraint firstItem="kls-Yd-hz3" firstAttribute="centerX" secondItem="OxN-J5-bDD" secondAttribute="centerX" id="GaB-D5-aqv"/>
+                            <constraint firstItem="kls-Yd-hz3" firstAttribute="bottom" secondItem="MqS-ht-NHe" secondAttribute="bottom" id="NYl-QW-Rb8"/>
+                            <constraint firstItem="kls-Yd-hz3" firstAttribute="width" secondItem="OxN-J5-bDD" secondAttribute="width" id="UZd-U7-Rbz"/>
+                            <constraint firstItem="tSo-MX-ewz" firstAttribute="height" secondItem="Kai-Uy-wpq" secondAttribute="height" id="VJ9-TH-o62"/>
+                            <constraint firstItem="OxN-J5-bDD" firstAttribute="top" secondItem="Kai-Uy-wpq" secondAttribute="top" id="bCV-7s-tbr"/>
+                            <constraint firstItem="tSo-MX-ewz" firstAttribute="width" secondItem="OxN-J5-bDD" secondAttribute="width" id="cfr-Vy-jhE"/>
+                            <constraint firstItem="1Vx-4x-tJF" firstAttribute="leading" secondItem="HTQ-HS-zMq" secondAttribute="leading" constant="20" id="djG-AL-wKK"/>
+                            <constraint firstItem="1Vx-4x-tJF" firstAttribute="centerX" secondItem="av6-KT-9BU" secondAttribute="centerX" id="hkx-0R-hna"/>
+                            <constraint firstItem="OxN-J5-bDD" firstAttribute="leading" secondItem="Kai-Uy-wpq" secondAttribute="trailing" constant="20" id="kb9-Nr-rlC"/>
+                            <constraint firstItem="1Vx-4x-tJF" firstAttribute="top" secondItem="HTQ-HS-zMq" secondAttribute="top" constant="20" id="l1z-qb-ibb"/>
+                            <constraint firstItem="Kai-Uy-wpq" firstAttribute="leading" secondItem="HTQ-HS-zMq" secondAttribute="leading" constant="40" id="pY4-Ly-bMN"/>
+                            <constraint firstItem="OxN-J5-bDD" firstAttribute="leading" secondItem="tSo-MX-ewz" secondAttribute="leading" constant="40" id="r1V-uh-m6s"/>
+                            <constraint firstItem="tSo-MX-ewz" firstAttribute="top" secondItem="Kai-Uy-wpq" secondAttribute="top" id="wxq-Sa-JuI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HTQ-HS-zMq"/>
+                    </view>
+                    <connections>
+                        <outlet property="changeNotificationButton" destination="tSo-MX-ewz" id="PMp-fv-3Ou"/>
+                        <outlet property="itemTableView" destination="1Vx-4x-tJF" id="PS0-jl-nZD"/>
+                        <outlet property="notificationLabel" destination="OxN-J5-bDD" id="GG3-DT-25R"/>
+                        <outlet property="textField" destination="kls-Yd-hz3" id="TQH-Wh-1uE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vGX-tr-FbE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1328.985507246377" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="holiday_detail_item_notification_icon" width="48" height="60"/>
+    </resources>
+</document>
