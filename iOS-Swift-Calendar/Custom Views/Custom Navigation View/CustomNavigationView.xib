@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNavigationView" customModule="iOS_Swift_Calendar" customModuleProvider="target">
+            <connections>
+                <outlet property="menuButton" destination="Lxv-cr-Upx" id="ctA-ld-Jnc"/>
+                <outlet property="monthDateLabel" destination="lYy-4p-7i6" id="yGO-SY-yUY"/>
+                <outlet property="todayButton" destination="tSv-Ua-TlJ" id="mdz-6Z-lgP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="263"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxv-cr-Upx">
+                    <rect key="frame" x="24" y="24" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="3kQ-aJ-Y75"/>
+                        <constraint firstAttribute="width" secondItem="Lxv-cr-Upx" secondAttribute="height" multiplier="1:1" id="OPo-SG-LQT"/>
+                    </constraints>
+                    <state key="normal" image="navigation_menu_icon"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYy-4p-7i6">
+                    <rect key="frame" x="184" y="24" width="46" height="21.666666666666671"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PpW-wJ-9HX">
+                    <rect key="frame" x="0.0" y="48" width="414" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="eMQ-qB-uza"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSv-Ua-TlJ">
+                    <rect key="frame" x="366" y="24" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="tSv-Ua-TlJ" secondAttribute="height" multiplier="1:1" id="OCT-xy-mLm"/>
+                        <constraint firstAttribute="width" constant="24" id="jZT-wT-wZI"/>
+                    </constraints>
+                    <state key="normal" image="navigation_today_icon"/>
+                    <state key="highlighted" image="navigation_today_highlighted_icon"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tSv-Ua-TlJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="0gI-Tn-aXW"/>
+                <constraint firstItem="PpW-wJ-9HX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7cx-aA-jcc"/>
+                <constraint firstItem="lYy-4p-7i6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Bxf-DI-sLO"/>
+                <constraint firstItem="lYy-4p-7i6" firstAttribute="top" secondItem="Lxv-cr-Upx" secondAttribute="top" id="Ec6-nL-jbi"/>
+                <constraint firstItem="Lxv-cr-Upx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="Jrr-sd-mcz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tSv-Ua-TlJ" secondAttribute="trailing" constant="24" id="L9q-a6-hYe"/>
+                <constraint firstItem="tSv-Ua-TlJ" firstAttribute="width" secondItem="tSv-Ua-TlJ" secondAttribute="height" multiplier="1:1" id="dgC-q4-VRZ"/>
+                <constraint firstItem="PpW-wJ-9HX" firstAttribute="top" secondItem="Lxv-cr-Upx" secondAttribute="bottom" id="k1U-tX-rIH"/>
+                <constraint firstItem="Lxv-cr-Upx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="k34-eE-Nvd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PpW-wJ-9HX" secondAttribute="trailing" id="rc7-bQ-JMn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="48" y="114.16256157635469"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navigation_menu_icon" width="168" height="147"/>
+        <image name="navigation_today_highlighted_icon" width="60" height="63"/>
+        <image name="navigation_today_icon" width="60" height="63"/>
+    </resources>
+</document>

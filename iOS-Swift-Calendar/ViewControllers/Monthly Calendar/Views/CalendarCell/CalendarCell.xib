@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalendarCell" id="ete-pK-6pz" customClass="CalendarCell" customModule="iOS_Swift_Calendar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="95" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="95" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shx-oC-JH1">
+                        <rect key="frame" x="32.5" y="6" width="30" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="shx-oC-JH1" secondAttribute="height" multiplier="1:1" id="Fmj-M4-IVD"/>
+                            <constraint firstAttribute="width" constant="30" id="OMq-aS-bZO"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qd-k0-0gN">
+                        <rect key="frame" x="39" y="12.5" width="17.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.19215686274509802" green="0.19215686274509802" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MSw-54-fEB">
+                        <rect key="frame" x="5" y="40" width="85.5" height="59"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tableView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="MSw-54-fEB" secondAttribute="bottom" constant="4" id="4Y9-RJ-jBk"/>
+                <constraint firstItem="9qd-k0-0gN" firstAttribute="centerY" secondItem="shx-oC-JH1" secondAttribute="centerY" id="Zfw-1H-gVd"/>
+                <constraint firstItem="shx-oC-JH1" firstAttribute="centerX" secondItem="usK-GF-3ze" secondAttribute="centerX" id="a5U-Hl-jPB"/>
+                <constraint firstItem="MSw-54-fEB" firstAttribute="centerX" secondItem="ete-pK-6pz" secondAttribute="centerX" id="aGv-7b-pjp"/>
+                <constraint firstItem="9qd-k0-0gN" firstAttribute="centerX" secondItem="shx-oC-JH1" secondAttribute="centerX" id="aOa-VA-NJb"/>
+                <constraint firstItem="MSw-54-fEB" firstAttribute="width" secondItem="ete-pK-6pz" secondAttribute="width" multiplier="0.9" id="gTY-tp-9fN"/>
+                <constraint firstItem="MSw-54-fEB" firstAttribute="top" secondItem="shx-oC-JH1" secondAttribute="bottom" constant="4" id="lmk-eC-ePK"/>
+                <constraint firstItem="shx-oC-JH1" firstAttribute="top" secondItem="ete-pK-6pz" secondAttribute="top" constant="6" id="oGU-IG-yoL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="usK-GF-3ze"/>
+            <size key="customSize" width="95" height="103"/>
+            <connections>
+                <outlet property="dayLabel" destination="9qd-k0-0gN" id="sBf-Ff-JAf"/>
+                <outlet property="eventTableView" destination="MSw-54-fEB" id="7GA-fT-1CV"/>
+                <outlet property="highlightView" destination="shx-oC-JH1" id="yiC-Bq-fyN"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="58.920539730134934"/>
+        </collectionViewCell>
+    </objects>
+</document>

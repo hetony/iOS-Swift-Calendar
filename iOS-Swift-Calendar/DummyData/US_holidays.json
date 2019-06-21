@@ -1,0 +1,27 @@
+[
+    {
+        "date":"2019/5/27",
+        "name":"Memorial Day",
+        "description":"Remembering and honoring the military personnel."
+    },
+    {
+        "date":"2019/07/01",
+        "name":"Summer Vacation",
+        "description":"Summer Vacation"
+    },
+    {
+        "date":"2019/7/4",
+        "name":"Commemorating the Declaration of Independence of the United States.",
+        "description":""
+    },
+    {
+        "date":"2019/9/2",
+        "name":"Celebrates and honors the greatest worker in the world.",
+        "description":"Labor Day"
+    },
+    {
+        "date":"2019/6/16",
+        "name":"Father's Day",
+        "description":"A celebration honoring fathers and celebrating fatherhood."
+    }
+]
