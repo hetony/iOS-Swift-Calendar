@@ -30,7 +30,7 @@ extension HolidayDetailCell {
         switch item {
         case .time(let date):
             
-            contentLabel.text = "\(date.string(with: "yyyy/MM/dd zzz"))"
+            contentLabel.text = "\(date.string(with: "yyyy/MM/dd"))"
         case .description(let content):
             
             contentLabel.text = content

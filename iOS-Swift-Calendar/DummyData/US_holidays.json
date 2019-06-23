@@ -11,17 +11,17 @@
     },
     {
         "date":"2019/7/4",
-        "name":"Commemorating the Declaration of Independence of the United States.",
-        "description":""
+        "name":"Independence Day",
+        "description":"Commemorating the Declaration of Independence of the United States."
     },
     {
         "date":"2019/9/2",
-        "name":"Celebrates and honors the greatest worker in the world.",
-        "description":"Labor Day"
+        "name":"Labor Day",
+        "description":"Celebrates and honors the greatest worker in the world."
     },
     {
         "date":"2019/6/16",
-        "name":"Father's Day",
-        "description":"A celebration honoring fathers and celebrating fatherhood."
+        "name":"A celebration honoring fathers and celebrating fatherhood.",
+        "description":"Father's Day"
     }
 ]

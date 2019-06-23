@@ -52,7 +52,7 @@ private extension HolidayDetailViewController {
         
         title = viewModel?.holiday.name
         
-        itemTableView.rowHeight = 50
+        itemTableView.rowHeight = 70
         itemTableView.dataSource = self
         itemTableView.separatorStyle = .none
         itemTableView.isUserInteractionEnabled = false

@@ -26,7 +26,7 @@ final class HolidayService {
         
         let holidaysFromData = try JSONDecoder().decode([Holiday].self, from: data)
         
-        return holidays = holidaysFromData.map {
+        return holidaysFromData.map {
             
             return Holiday(
                 name: $0.name,
